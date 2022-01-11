@@ -15,14 +15,16 @@ def cria_varios():
         {"id": 2,"nome":"Nivaldo","sobrenome": "Junior","idade": 35,"email":"gjfgjk@jkhh.com"},
         {"id": 3,"nome":"Anderson","sobrenome": "Faustino","idade": 27,"email":"gjfgjk@jkhh.com"},
         {"id": 4,"nome":"Joao","sobrenome": "Silva","idade": 45,"email":"gjfgjk@jkhh.com"},
-        {"id": 5,"nome":"TESTE","sobrenome": "TESTE","idade": 45,"email":"gjfgjk@jkhh.com"}
+        {"id": 5,"nome":"TESTE","sobrenome": "TESTE","idade": 31,"email":"gjfgjk@jkhh.com"}
         
     ])
 
 def atualiza():
-    db.cadastro.update_one
+    db.cadastro.update_one()
+
 
 if __name__=="__main__":
-    #apaga_um({})
+    apaga_um({"id": 1})
     #apaga_varios({})
-    cria_varios()
+    #atualiza({})
+    #cria_varios()
